@@ -1,0 +1,3 @@
+# exclude testing repository and system files
+.Trash_hall/
+./.idea/
