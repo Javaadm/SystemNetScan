@@ -2,77 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="669c6ccf-24c0-4664-a561-50dcab547160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/.idea/Scan_processing.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Belarus/.~lock.Belarus_pass.docx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Belarus/Belarus_pass.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Belarus_pasport.enc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Belarus_pasport/.~lock.üàïÄÉôææêƒ ì«ó¿¬ ä¼¿Γα¿⌐ ₧½∞∩¡«ó¿τ.docx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Belarus_pasport/üàïÄÉôææêƒ ì«ó¿¬ ä¼¿Γα¿⌐ ₧½∞∩¡«ó¿τ.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Belarus_pasport/üàïÄÉôææêƒ ì«ó¿¬ ä¼¿Γα¿⌐ ₧½∞∩¡«ó¿τ.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Devil_May_Die/Devil_May_Die.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Ukraina_pasport.enc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/Untitled.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form_filling/example.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/._bw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.idea/Scan_processing.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.ipynb_checkpoints/Paint-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.ipynb_checkpoints/Test_scanner-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.ipynb_checkpoints/photoshop-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/.ipynb_checkpoints/tesseract-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/Paint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/Scanner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/Test_scanner.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/birth_date.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/birth_date_bw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/birth_place.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/birth_place_bw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/final_pass15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/final_pass16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/out15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/out16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/out16_rotated.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/pass.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/personal_number.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/personal_number_bw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/Domaha.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/Domaha_bw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/Nastya_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/Nastya_test_bw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/charisma.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/code_bw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/code_bw_rotated.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/code_bw_rotated.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/code_snippet.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/code_snippet_bw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/final_pass15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/final_pass16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out16_rotated.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photos/out9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/photoshop.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scan_processing/tesseract.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Paint.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Paint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/birth_date.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/birth_date_bw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/birth_place.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/birth_place_bw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/expiration_date.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/expiration_date_bw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/final_pass15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/issuing_date.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/issuing_date_bw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/Paint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/Paint.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,6 +111,7 @@
       <workItem from="1569755974323" duration="1527000" />
       <workItem from="1569758091207" duration="1225000" />
       <workItem from="1570030089339" duration="1944000" />
+      <workItem from="1570113729829" duration="16522000" />
     </task>
     <servers />
   </component>
@@ -181,24 +123,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Alpha/Paint.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Work_with_documents$Alpha.coverage" NAME="Alpha Coverage Results" MODIFIED="1570031284978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
+    <SUITE FILE_PATH="coverage/Work_with_documents$Alpha.coverage" NAME="Alpha Coverage Results" MODIFIED="1570285654679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
   </component>
 </project>
