@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/mikhail/Work_with_documents/Trash_hall/Scan_processing/C_directory/main.cpp
+stdlib.h
+-
 iostream
 -
 algorithm
@@ -20,5 +22,9 @@ vector
 string
 -
 stdio.h
+-
+stack
+-
+cmath
 -
 

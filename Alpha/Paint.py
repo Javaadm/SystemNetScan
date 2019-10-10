@@ -4,10 +4,7 @@
 
 from PIL import Image, ImageDraw, ImageFont
 import pytesseract
-from tesserocr import PyTessBaseAPI
 from PIL import Image
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
 import json
 
 
@@ -122,7 +119,7 @@ def citizenship(open_fname, write_name, brightness_border=180, scale=1):
     base = Image.open(open_fname).convert('RGB')
     bs = [x for x in base.size]
     image_crop = bs*2
-    image_crop[0] = (int)(bs[0]*0.3211)
+    image_crop[0] = (int)(bs[0]*0.3170)
     image_crop[1] = (int)(bs[1]*0.669)
     image_crop[2] = (int)(bs[0]*0.6341)
     image_crop[3] = (int)(bs[1]*0.6886)
@@ -176,6 +173,10 @@ def json_maker(prefix):
 
 
 prefix = "./images/"
+
+
+openf = prefix + "full_fledged_pass.jpg"
+print(test2(openf, prefix))
+
 openf = prefix + "final_pass16.jpg"
-savef = prefix + "personal_number.jpg"
 print(test2(openf, prefix))
