@@ -2,43 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="669c6ccf-24c0-4664-a561-50dcab547160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Alpha/Pdf_to_jpg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alpha/PointVector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alpha/Scan_processing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alpha/Segment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Work_with_documents.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Work_with_documents.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alpha/Invoker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/Paint.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Paint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/birth_date.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/birth_date.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/birth_place.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/birth_place.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/citizenship.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/citizenship.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/expiration_date.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/expiration_date.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/issuing_date.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/issuing_date.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/personal_number.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/personal_number.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Form_filling/Belarus_pasport/.~lock.üàïÄÉôææêƒ ì«ó¿¬ ä¼¿Γα¿⌐ ₧½∞∩¡«ó¿τ.docx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/C_directory" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/C_directory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/coordinates.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/image.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/image.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/Paint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/Paint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/Test_scanner.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/Test_scanner.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/edges.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/edges.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/untitled/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/untitled/.idea/untitled.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/untitled/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/untitled/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/C_directory/image.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_directory/image.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Pass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/PointVector.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/PointVector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Segment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Segment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/leng_belor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/pass_ukr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/leng_ukra.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/pass_blr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/coordinates_4p.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/coordinates_4p.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Alpha/Scan_processing.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Alpha/Invoker.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -74,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Scan_processing">
+  <component name="RunManager" selected="Python.Invoker">
     <configuration name="Alpha" type="PythonConfigurationType" factoryName="Python">
       <module name="Work_with_documents" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +87,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Alpha/Paint.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Invoker" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Work_with_documents" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Alpha" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Alpha/Invoker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,6 +165,7 @@
       <item itemvalue="Python.Scanner" />
       <item itemvalue="Python.Alpha" />
       <item itemvalue="Python.Scan_processing" />
+      <item itemvalue="Python.Invoker" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -162,7 +183,8 @@
       <workItem from="1570030089339" duration="1944000" />
       <workItem from="1570113729829" duration="16522000" />
       <workItem from="1570550000921" duration="4246000" />
-      <workItem from="1570615633803" duration="18526000" />
+      <workItem from="1570615633803" duration="18747000" />
+      <workItem from="1570733595651" duration="10444000" />
     </task>
     <servers />
   </component>
@@ -183,6 +205,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1570804350958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Alpha.coverage" NAME="Alpha Coverage Results" MODIFIED="1570554047095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Scan_processing.coverage" NAME="Scan_processing Coverage Results" MODIFIED="1570654098044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
   </component>

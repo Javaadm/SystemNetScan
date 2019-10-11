@@ -3,11 +3,11 @@ import math
 
 class Point:
 
-    def __init__(self, x: int, y: int):
-        self.x = x
-        self.y = y
+    def __init__(self, y: int, x: int):
+        self.x = y
+        self.y = x
 
-    def __init__(self, start, end):
+    def get_center(self, start, end):
         self.x = end.x - start.x
         self.y = end.y - start.y
 
@@ -19,7 +19,7 @@ class Point:
         return Point(new_x, new_y)
 
     def rotate(self, rad_angle, origin=None):
-        self = self.get_rotated(rad_angle, origni=origin)
+        self = self.get_rotated(rad_angle, origin=origin)
 
     def round(self):
         self.x = int(self.x)

@@ -7,9 +7,6 @@ class Segment:
         self.start = start
         self.end = end
 
-    def __init__(self, x1, y1, x2, y2):
-        self = Segment(Point(x1, y1), Point(x2, y2))
-
     def get_length(self):
         return math.sqrt((self.start.x - self.end.x)**2
                          + (self.start.y - self.end.y)**2)
@@ -30,14 +27,11 @@ class Segment:
         self.start.rotate(rotation_angle, center)
         self.end.rotate(rotation_angle, center)
 
-    def make_shift(self, x_shift, y_shift):
-        self.start.x += x_shift
-        self.start.y += y_shift
-        self.end.x += x_shift
-        self.end.y += y_shift
-
     def make_shift(self, new_start):
-        self.make_shift(new_start.x, new_start.y)
+        self.start.x += new_start.x
+        self.start.y += new_start.y
+        self.end.x += new_start.x
+        self.end.y += new_start.y
 
     def get_min_x(self):
         if (self.start.x > self.end.x):
