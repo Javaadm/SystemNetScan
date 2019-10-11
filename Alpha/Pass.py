@@ -3,13 +3,23 @@ from Alpha.PointVector import Point
 from PIL import Image
 import numpy
 import math
+import os
 import cv2 as cv
 
 
-class Pass:
-    def __init__(self, path: str):
-        self.image = Image.open(path)
-        self.path = path
+class PassPage:
+    #def __init__(self, path: str):
+    #    self.image = Image.open(path)
+    #    self.path = path
+    def __init__(self, image):
+        self.image = image;
+        self.LETS_ROLL()
+
+    def save_image(self, path: str):
+        self.image.save(path)
+
+    def upside_down(self):
+        self.image = self.image.rotate(180)
 
     def crop(self, image, upper_left, lower_right):
         return image.crop([upper_left.y, upper_left.x, lower_right.y, lower_right.x])
@@ -20,14 +30,20 @@ class Pass:
         bw_image = gray.point(lambda x: 0 if x < brightness_border else 255, '1')
         return bw_image
 
-
-    def fill_around(self, image, canvas_size, center=None, color="white"):
+    def fill_around(self, image, canvas_size=None, center=None, color="white"):
         if center is None:
             center = Point(image.size()[1]//2, image.size()[0]//2)
+        if canvas_size is None:
+            canvas_size = [3*x for x in image.size()]
         canvas = Image.new("RGB", canvas_size, color)
         canvas.paste(image, (canvas_size[0] // 2 - center.x, canvas_size[1] // 2 - center.y))
         return canvas
 
+    def prepare_image_part(self, image, upper_left, lower_right, canvas_size=None,
+                           center=None, color="white", brightness_border=180):
+        return self.fill_around(self.give_bw(self.crop(image,
+                                 upper_left, lower_right), brightness_border),
+                                 canvas_size=canvas_size, center=center, color=color)
 
     def fill_and_give_points(self, image, diag1, diag2, canvas_size, center=None, color="white"):
         if center is None:
@@ -38,13 +54,20 @@ class Pass:
         diag2.make_shift(new_start)
         return ret_image, diag1, diag2
 
-
     def get_edges(self):
         edges = self.image.convert('L')
         edges = numpy.array(edges)
         edges = cv.Canny(edges, 7, 14)
         #pil_image = Image.fromarray(edges)
         return edges
+
+    def cpp_launcher(self):
+        os.system("./C_directory/get_pass_corners")
+
+    def cleaner(self):
+        os.system("rm C_directory/image.txt")
+        os.system("rm C_directory/coordinates_2p.txt")
+        os.system("rm C_directory/coordinates_4p.txt")
 
     def LETS_ROLL(self):
        self.edges = self.get_edges()
@@ -55,7 +78,8 @@ class Pass:
                for j in i:
                    f.write(' ' + str(j))
        # start of cpp block
-        # end of cpp block
+       self.cpp_launcher()
+       # end of cpp block
        coords = []
        with open("C_directory/coordinates_4p.txt", "r+") as file:
            arr = file.readline().split(' ')
@@ -67,16 +91,13 @@ class Pass:
        self.image, diag1, diag2 = \
            self.fill_and_give_points(self.image,
                                      diag1, diag2, (int(diag1.get_length()), int(diag1.get_length())), center)
-       #self.image.show()
        side1 = Segment(diag1.start, diag2.start)
        side2 = Segment(diag1.start, diag2.end)
        if side1.get_length() < side2.get_length():
            angle = side2.get_polar_angle()
        else:
            angle = side1.get_polar_angle()
-       print(angle)
        self.image = self.image.rotate(angle*180/math.pi)
-       #self.image.show()
        diag1.rotate(-angle, center)
        diag2.rotate(-angle, center)
        upper_left = Point((diag1.get_min_x() + diag2.get_min_x())//2,
@@ -85,4 +106,5 @@ class Pass:
                            (diag1.get_max_y() + diag2.get_max_y())//2)
        self.image = self.crop(self.image, upper_left, lower_right)
        self.image = self.image.rotate(180)
+       self.cleaner()
 

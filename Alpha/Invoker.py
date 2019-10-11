@@ -1,9 +1,11 @@
-from Alpha.Pass import Pass
+from Alpha.Pass import PassPage
+from Alpha.pass_blr import BlrPass
 from PIL import Image
+import os
 
-passport = Pass("images/out15.jpg")
+passport = BlrPass("images/pass.pdf")
 
-passport.LETS_ROLL()
-passport.image.save("images/invoker_test_out_15.jpg")
+for n in range(passport.pages):
+    passport.pages[n].image.save("images/out" + str(n) + ".jpg")
 
 
