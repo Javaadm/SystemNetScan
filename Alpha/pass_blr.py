@@ -4,25 +4,20 @@ import pytesseract
 import tesserocr
 from PIL import Image
 import json
-from Alpha.Pass import PassPage
+from Alpha.PassPage import PassPage
 from Alpha.PointVector import Point
+from Alpha.Pass import Pass
 
 
-class BlrPass(PassPage):
-    def __init__(self, path_to_pdf: str):
-        self.pages = self.pdf_to_pages(path_to_pdf)
-        self.arrange_pages()
-        self.fill_form()
-        self.prepare_json()
-
-    def pdf_to_pages(self, path_to_pdf):
-        return [PassPage(x) for x in (convert_from_path(path_to_pdf, 500))]
+class BlrPass(Pass):
+    def __init__(self, path_to_pdf, path_to_images):
+        super().__init__(path_to_pdf=path_to_pdf, path_to_images=path_to_images)
 
     def arrange_pages(self):
-        pass
-
-    def validate_page(self, page: PassPage):
-        pass
+        new_list = []
+        new_list.append(self.find_page(30))
+        new_list.append(self.find_page(32))
+        self.pages=new_list
 
     def clear(self):
         pass
@@ -33,7 +28,18 @@ class BlrPass(PassPage):
     def prepare_json(self):
         pass
 
+    def cut_page_number(self, page):
+        crop = [x for x in page.get_image().size] * 2
+        crop[0] = 0
+        crop[1] = 0.013 * page.get_image().size[1]
+        crop[2] = 0.162 * page.get_image().size[0]
+        crop[3] = crop[1] + crop[2]
+        image = page.get_image_part(Point(crop[1], crop[0]), Point(crop[3], crop[2]),
+                                        brightness_border=160)
+        return image.rotate(90)
+
     def birth_date(self, image):
+        pass
         image = image.convert('RGB')
         base_crop = image.size()
         upper_left = Point()

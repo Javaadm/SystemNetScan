@@ -2,26 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="669c6ccf-24c0-4664-a561-50dcab547160" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Work_with_documents.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Work_with_documents.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alpha/PassPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/C_directory/coordinates_4p.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/C_directory/image.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/Invoker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Invoker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/Pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Pass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/birth_date.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/birth_place.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/birth_place2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/citizenship.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/expiration_date.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/full_fledged_pass.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/invoker_test_out_15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/invoker_test_out_15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/issuing_date.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out15_edges.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out15edges.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/passport_number.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/personal_number.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Pdf_to_jpg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Pdf_to_jpg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/final_pass15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/final_pass16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/invoker_test_out_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out15_grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out15_ready.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out15_ready_bw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out15_rotated.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out16.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/pass_blr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/pass_blr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/Paint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/Paint.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +186,9 @@
       <workItem from="1570113729829" duration="16522000" />
       <workItem from="1570550000921" duration="4246000" />
       <workItem from="1570615633803" duration="18747000" />
-      <workItem from="1570733595651" duration="18892000" />
+      <workItem from="1570733595651" duration="19991000" />
+      <workItem from="1570866548049" duration="8496000" />
+      <workItem from="1570878526930" duration="7455000" />
     </task>
     <servers />
   </component>
@@ -210,7 +209,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1570823741337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
+    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1570887287239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Alpha.coverage" NAME="Alpha Coverage Results" MODIFIED="1570554047095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Scan_processing.coverage" NAME="Scan_processing Coverage Results" MODIFIED="1570654098044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
   </component>
