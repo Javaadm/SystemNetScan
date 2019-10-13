@@ -6,8 +6,9 @@ import os
 
 passport = BlrPass("images/pass.pdf", "images/")
 
-for n in range(len(passport.pages)):
-    passport.pages[n].get_image().save("images/invoker_out" + str(n) + ".jpg")
+# for n in range(len(passport.pages)):
+#     passport.pages[n].get_image().save("images/invoker_out" + str(n) + ".jpg")
 
+print (passport.pass_info)
 
 

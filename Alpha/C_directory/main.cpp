@@ -1,11 +1,9 @@
 #include <stdlib.h>
 #include <iostream>
 #include <algorithm>
-#include <jsoncpp/json/json.h>
 #include <fstream>
 #include <vector>
 #include <string>
-#include <stdio.h>
 #include <stack>
 #include <cmath>
 
@@ -149,24 +147,12 @@ stack<Point> get_convexHull(vector<Point>& points, int n)
     }
 
     return S;
-    // Now stack has the output points, print contents of stack
-    while (!S.empty())
-    {
-        Point p = S.top();
-        cout << "(" << p.x << ", " << p.y <<")" << endl;
-        S.pop();
-    }
 }
 
-bool compare_lines(const pair<Point, Point> & a, const pair<Point, Point> & b)
-{
-    return distSq(a.first, a.second) > distSq(b.first, b.second);
-}
 
 vector<pair<int, int>> get_pass_variety()
 {
     string open_file = system_path + "image.txt";
-    string write_file = system_path + "coordinates_2p.txt";
     ifstream cin;
     cin.open(open_file.c_str());
     int rows, columns;
@@ -219,31 +205,14 @@ vector<pair<int, int>> get_pass_variety()
                     }
                 }
 
-                //cout << varieties.back().size() << '\n';
             }
         }
     }
-    int m = 0;
     sort(varieties.begin(), varieties.end(),
          [](vector<pair<int, int>> & a, vector<pair<int, int>> & b)
          {return a.size() > b.size();});
 
-    //for(int i = 0; i < 3; i++)
-    //    cout << '\n' << varieties[i].size();
-
-    int left = columns, right = 0, up = rows, down = 0;
-    for (pair<int, int> cur : varieties[0])
-    {
-        left = min(left, cur.second);
-        right = max(right, cur.second);
-        up = min(up, cur.first);
-        down = max(down, cur.first);
-    }
-
-    ofstream cout;
-    cout.open(write_file.c_str());
-    cout << left << ' ' << up << ' ' << right << ' ' << down;
-    return varieties[0];
+   return varieties[0];
 }
 
 
@@ -253,14 +222,12 @@ int main() {
     vector<Point> points;
     for (pair<int, int> point: pass_variety)
     {
-       points.push_back(Point());
-       points.back().x = point.first;
-       points.back().y = point.second;
+        points.push_back(Point());
+        points.back().x = point.first;
+        points.back().y = point.second;
     }
 
     stack<Point> convexHull = get_convexHull(points, (int)pass_variety.size());
-
-    //cout << "\n hull size: " << convexHull.size();
 
     vector<Point> hull;
 
@@ -278,7 +245,7 @@ int main() {
         }
 
     sort(lines.begin(), lines.end(), [](const pair<Point, Point> & a, const pair<Point, Point> & b)
-            {return distSq(a.first, a.second) > distSq(b.first, b.second);});
+    {return distSq(a.first, a.second) > distSq(b.first, b.second);});
 
     Point line1, line2;
     line1.x = lines[0].first.x - lines[0].second.x;
@@ -298,18 +265,10 @@ int main() {
         float dif = abs(angle1 - angle2);
         if(dif > 0.2 && dif < 2.94)
         {
-            //cout << endl << i << endl;
             lines[1] = lines[i];
             break;
         }
     }
-
-    //for (int i = 0; i < 2; i++)
-    //{
-    //    cout << endl << i << endl;
-    //    cout << lines[i].first.x << ' ' << lines[i].first.y << endl;
-    //    cout << lines[i].second.x << ' ' << lines[i].second.y << endl;
-    //}
 
     ofstream diag_out;
     diag_out.open((system_path + "coordinates_4p.txt").c_str());

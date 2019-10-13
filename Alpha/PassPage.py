@@ -14,7 +14,7 @@ class PassPage:
 
     def __del__(self):
         pass
-        #os.system("rm " + self.path)
+        os.system("rm " + self.path)
 
     def save_image(self, path=None, image=None):
         if path is None:
@@ -32,39 +32,46 @@ class PassPage:
         self.get_image().rotate(180).save(self.path)
         return self
 
-    def crop(self, image, upper_left, lower_right):
+    @staticmethod
+    def crop(image, upper_left, lower_right):
         return image.crop([upper_left.y, upper_left.x, lower_right.y, lower_right.x])
 
-    def give_bw(self, image, brightness_border=180):
+    @staticmethod
+    def give_bw(image, brightness_border=180):
         column = image
         gray = column.convert('L')
         bw_image = gray.point(lambda x: 0 if x < brightness_border else 255, '1')
         return bw_image
 
-    def fill_around(self, image, canvas_size=None, center=None, color="white"):
+    @staticmethod
+    def fill_around(image, canvas_size=None, center=None, color="white"):
         if center is None:
-            center = Point(image.size[1]//2, image.size[0]//2)
+            center = Point(image.size[0]//2, image.size[1]//2)
         if canvas_size is None:
             canvas_size = [3*x for x in image.size]
         canvas = Image.new("RGB", canvas_size, color)
         canvas.paste(image, (canvas_size[0] // 2 - center.x, canvas_size[1] // 2 - center.y))
         return canvas
 
-    def prepare_image_part(self, image, upper_left, lower_right, canvas_size=None,
-                           center=None, color="white", brightness_border=180):
-        return self.fill_around(self.give_bw(self.crop(image,
-                                 upper_left, lower_right), brightness_border),
-                                 canvas_size=canvas_size, center=center, color=color)
+    @staticmethod
+    def prepare_image_part(image, upper_left, lower_right, canvas_size=None, center=None,
+                           color="white", brightness_border=180, make_bw=True, do_fill=True):
+        image = PassPage.crop(image, upper_left, lower_right)
+        if make_bw:
+            image = PassPage.give_bw(image, brightness_border)
+        if do_fill:
+            image = PassPage.fill_around(image, canvas_size=canvas_size, center=center, color=color)
+        return image
 
     def get_image_part(self, upper_left, lower_right, canvas_size=None, center=None,
                        color="white", brightness_border=180):
-        return self.prepare_image_part(image=self.get_image(), upper_left=upper_left, lower_right=lower_right,
+        return PassPage.prepare_image_part(image=self.get_image(), upper_left=upper_left, lower_right=lower_right,
                                        canvas_size=canvas_size, center=center, color=color,
                                        brightness_border=brightness_border)
 
     def fill_and_give_points(self, image, diag1, diag2, canvas_size, center=None, color="white"):
         if center is None:
-            center = Point(image.size[1] // 2, image.size[0] // 2)
+            center = Point(image.size[0] // 2, image.size[1] // 2)
         ret_image = self.fill_around(image, canvas_size, center, color)
         new_start = Point(canvas_size[0]//2 - center.x, canvas_size[1]//2 - center.y)
         diag1.make_shift(new_start)
@@ -82,7 +89,6 @@ class PassPage:
 
     def cleaner(self):
         os.system("rm C_directory/image.txt")
-        os.system("rm C_directory/coordinates_2p.txt")
         os.system("rm C_directory/coordinates_4p.txt")
 
     def LETS_ROLL(self):

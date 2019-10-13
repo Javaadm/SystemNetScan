@@ -3,9 +3,9 @@ import math
 
 class Point:
 
-    def __init__(self, y: int, x: int):
-        self.x = y
-        self.y = x
+    def __init__(self, x: int, y: int):
+        self.x = x
+        self.y = y
 
     def get_center(self, start, end):
         self.x = end.x - start.x
