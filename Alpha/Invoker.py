@@ -10,5 +10,4 @@ passport = BlrPass("images/pass.pdf", "images/")
 #     passport.pages[n].get_image().save("images/invoker_out" + str(n) + ".jpg")
 
 print (passport.pass_info)
-
-
+passport.create_file()

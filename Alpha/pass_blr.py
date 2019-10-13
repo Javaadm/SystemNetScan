@@ -43,7 +43,7 @@ class BlrPass(Pass):
     def get_fifteen_page_text(self):
         fifteen_page_text = dict()
         fifteen_page_image = self.pages[0].get_image()
-        fifteen_page_text["name"] = self.name(fifteen_page_image)
+        fifteen_page_text["first_name"] = self.first_name(fifteen_page_image)
         fifteen_page_text["surname"] = self.surname(fifteen_page_image)
         fifteen_page_text["patronymic"] = self.patronymic(fifteen_page_image)
         fifteen_page_text["birth_date"] = self.birth_date(fifteen_page_image)
@@ -56,11 +56,11 @@ class BlrPass(Pass):
     def get_sixteen_page_text(self):
         pass
 
-    def name(self, image):
+    def first_name(self, image):
         upper_left = Point(0.621 * image.size[1], 0.199 * image.size[0])
         lower_right = Point(0.654 * image.size[1], 0.324 * image.size[0])
         image = PassPage.prepare_image_part(image, upper_left, lower_right)
-        # image.save("images/cut_name.jpg")
+        # image.save("images/cut_first_name.jpg")
         return pytesseract.image_to_string(image, lang='rus')
 
     def surname(self, image):
@@ -111,6 +111,11 @@ class BlrPass(Pass):
         image = PassPage.prepare_image_part(image, upper_left, lower_right)
         # image.save("images/cut_expiration_date.jpg")
         return pytesseract.image_to_string(image, lang='rus')
+
+    def create_file(self):
+        path_to_file = "Result/" + self.pass_info["first_name"] + '_' + self.pass_info["surname"] + '_' +self.pass_info["patronymic"] + ".docx"
+        path_to_template = "Docs/Belarus_pass.docx"
+        super().create_file(path_to_file, path_to_template)
 
     def get_json_passport(open_fname, main_path=""):
         birth_date_value = birth_date(open_fname, main_path)

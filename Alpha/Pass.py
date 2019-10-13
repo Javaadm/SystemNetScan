@@ -1,5 +1,6 @@
 from Alpha.PassPage import PassPage
 from Alpha.PointVector import Point
+from docx import Document
 from pdf2image import convert_from_path
 import pytesseract
 
@@ -35,9 +36,9 @@ class Pass(object):
                 continue
             image = self.cut_page_number(page.upside_down(), "2")
             text = pytesseract.image_to_string(image, lang='eng')
-            print(page.path)
-            print(text)
-            print()
+            # print(page.path)
+            # print(text)
+            # print()
             for number in pages_numbers:
                 if text.find(str(number)) != -1:
                     ret_pages[number] = page
@@ -57,4 +58,16 @@ class Pass(object):
 
     def prepare_json(self):
         pass
+
+    def create_file(self, path_to_file, path_to_template):
+        document = Document(path_to_template)
+        for par in document.paragraphs:
+            for run in par.runs:
+                for key in self.pass_info.keys():
+                    run.text = run.text.replace('*' + key + '*', self.pass_info[key])
+                    # print('%' + key + '%')
+        document.save(path_to_file)
+
+
+
 
