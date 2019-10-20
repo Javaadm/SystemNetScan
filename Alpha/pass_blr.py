@@ -10,8 +10,9 @@ from Alpha.Pass import Pass
 
 
 class BlrPass(Pass):
-    def __init__(self, path_to_pdf, path_to_images):
-        super().__init__(path_to_pdf=path_to_pdf, path_to_images=path_to_images)
+    def __init__(self, path_to_pdf, path_to_images, deletion_key=True, analysis_key=True, debugging=False):
+        super().__init__(path_to_pdf=path_to_pdf, path_to_images=path_to_images, deletion_key=deletion_key,
+                         analysis_key=analysis_key, debugging=debugging)
 
     def arrange_pages(self):
         new_list = (self.find_pages([30, 32]))
@@ -29,7 +30,7 @@ class BlrPass(Pass):
     def prepare_json(self):
         pass
 
-    def cut_page_number(self, page, ang):
+    def cut_page_number(self, page):
         crop = [x for x in page.get_image().size] * 2
         crop[0] = 0
         crop[1] = crop[1] * 0.029

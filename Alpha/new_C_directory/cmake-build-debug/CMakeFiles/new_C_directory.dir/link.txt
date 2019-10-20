@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/new_C_directory.dir/main.c.o  -o new_C_directory 

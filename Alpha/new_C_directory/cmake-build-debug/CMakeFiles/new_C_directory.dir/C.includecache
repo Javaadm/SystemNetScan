@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/main.c
+stdio.h
+-
+vector.h
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/vector.h
+pvector.h
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/pvector.h
+ppvector.h
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/ppvector.h
+
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/ppvector.h
+stdlib.h
+-
+string.h
+-
+vector.h
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/vector.h
+pvector.h
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/pvector.h
+
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/pvector.h
+stdlib.h
+-
+string.h
+-
+vector.h
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/vector.h
+
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/vector.h
+stdlib.h
+-
+string.h
+-
+

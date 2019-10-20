@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="new_C_directory" targetName="new_C_directory" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="02d247ed-0a76-48ea-b548-4cac6bfc42e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/new_C_directory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/matrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/point.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ppvector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoker.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Pass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PassPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PassPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/pass.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../images/pass.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pass_blr.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pass_blr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pass_ukr.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pass_ukr.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="new_C_directory" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1SKwuQsbw87ptKjwn31H6zIs769" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="new_C_directory" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="new_C_directory" TARGET_NAME="new_C_directory" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="new_C_directory" RUN_TARGET_NAME="new_C_directory">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02d247ed-0a76-48ea-b548-4cac6bfc42e9" name="Default Changelist" comment="" />
+      <created>1571325816930</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571325816930</updated>
+      <workItem from="1571325819765" duration="52059000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

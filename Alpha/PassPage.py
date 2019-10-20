@@ -8,13 +8,16 @@ import cv2 as cv
 
 
 class PassPage:
-    def __init__(self, path: str):
+    def __init__(self, path: str, deletion_key=True, analysis_key=True):
+        self.deletion_key = deletion_key
+        self.analysis_key = analysis_key
         self.path = path
-        self.LETS_ROLL()
+        if self.analysis_key:
+            self.LETS_ROLL()
 
     def __del__(self):
-        pass
-        os.system("rm " + self.path)
+        if(self.deletion_key):
+            os.system("rm " + self.path)
 
     def save_image(self, path=None, image=None):
         if path is None:

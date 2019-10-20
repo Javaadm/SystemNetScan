@@ -1,0 +1,3 @@
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/new_C_directory.dir
+/home/mikhail/Work_with_documents/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/edit_cache.dir
