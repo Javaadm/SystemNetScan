@@ -29,16 +29,16 @@ void matrix_check(matrix *mat, int row, int col)
         printf("Matrix row out of range!!!\n");
 }
 
-void matrix_set(matrix *mat, int row, int col, int* value)
+void matrix_set(matrix *mat, int row, int col, int value)
 {
     matrix_check(mat, row, col);
-    mat->data[row*mat->cols + col] = value;
+    mat->data[row*mat->cols + col] = &value;
 }
 
-int *matrix_get (matrix *mat, int row, int col)
+int matrix_get (matrix *mat, int row, int col)
 {
     matrix_check(mat, row, col);
-    return mat->data[row*mat->cols + col];
+    return *mat->data[row*mat->cols + col];
 }
 
 void matrix_print(matrix *mat)
@@ -47,8 +47,13 @@ void matrix_print(matrix *mat)
     {
         for(int j = 0; j < mat->cols; j++)
             printf("%d, ", matrix_get(mat, i, j));
-        printf('\n');
+        printf("\n");
     }
+}
+
+void matrix_free(matrix *mat)
+{
+    free(mat->data);
 }
 
 #endif //NEW_C_DIRECTORY_MATRIX_H

@@ -16,7 +16,8 @@
 // #include <cmath>
 
 
-const char system_path[] = "./C_directory/";
+// const char system_path[] = "./C_directory/";
+const char system_path[] = "/home/mikhail/Work_with_documents/Alpha/new_C_directory";
 
 
 pvector get_pass_variety()
@@ -26,7 +27,7 @@ pvector get_pass_variety()
     strcat(open_file, "image.txt");
     FILE *input = fopen(open_file, "r");
     int rows, columns;
-    fscanf(input, "%d %d", rows ,columns);
+    fscanf(input, "%d %d", &rows, &columns);
     matrix image;
     matrix_init(&image, rows, columns);
     pvector biggest_variety, current_variety;
@@ -39,7 +40,7 @@ pvector get_pass_variety()
         for (int j = 0; j < columns; j++)
         {
             int pixel;
-            fscanf(input, " %d", pixel);
+            fscanf(input, " %d", &pixel);
             matrix_set(&image, i, j, pixel);
         }
 
@@ -88,6 +89,9 @@ pvector get_pass_variety()
                 biggest_variety = current_variety;
         }
     }
+    matrix_free(&image);
+    matrix_free(&is_used);
+    pvector_free(&current_variety);
 
     return biggest_variety;
 }
@@ -117,10 +121,10 @@ int main() {
         doublePoint linedp = ppvector_get(&lines, i);
         line2.x = linedp.first.x - linedp.second.x;
         line2.y = linedp.first.y - linedp.second.y;
-        double angle1 = atan2(line1.y, line1.x);
+        double angle1 = atan2((double)line1.y, (double)line1.x);
         if(angle1 < 0)
             angle1 += M_PI;
-        double angle2 = atan2(line2.y, line2.x);
+        double angle2 = atan2((double)line2.y, (double)line2.x);
         if(angle2 < 0)
             angle2 += M_PI;
 
@@ -144,5 +148,8 @@ int main() {
         if(i == 0)
             fprintf(output, " ");
     }
+    ppvector_free(&lines);
+    pvector_free(&pass_variety);
+    pvector_free(&hull);
     return 0;
 }

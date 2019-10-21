@@ -20,10 +20,10 @@ Point p0;
 // A utility function to find next to top in a stack
 Point nextToTop(pvector *S)
 {
-Point p = pvector_top(&S);
-pvector_pop(&S);
-Point res = pvector_top(&S);
-pvector_push(&S, p);
+Point p = pvector_top(S);
+pvector_pop(S);
+Point res = pvector_top(S);
+pvector_push(S, p);
 return res;
 }
 
