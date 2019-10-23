@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="669c6ccf-24c0-4664-a561-50dcab547160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Alpha/new_C_directory/point.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alpha/new_C_directory/vector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alpha/Abstract_Documents/AbstractDocument.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alpha/Abstract_Documents/AbstractPass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alpha/Abstract_Documents/JsonWorker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/Invoker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Invoker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/Pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Pass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/PassPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/PassPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/pass.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/pass.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/pass_blr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/pass_blr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/pass_ukr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/pass_ukr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../goodsoft/anaconda3/bin/python" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -181,6 +178,7 @@
       <workItem from="1570733595651" duration="19991000" />
       <workItem from="1570866548049" duration="8496000" />
       <workItem from="1570878526930" duration="54040000" />
+      <workItem from="1571848353268" duration="10621000" />
     </task>
     <servers />
   </component>
