@@ -4,3 +4,4 @@ project(new_C_directory C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(new_C_directory main.c vector.h point.h matrix.h pvector.h ppvector.h)
+target_link_libraries(new_C_directory m)

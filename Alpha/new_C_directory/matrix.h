@@ -8,7 +8,7 @@
 #define NEW_C_DIRECTORY_MATRIX_H
 
 typedef struct matrix{
-    int** data;
+    int* data;
     int rows;
     int cols;
 } matrix;
@@ -32,13 +32,13 @@ void matrix_check(matrix *mat, int row, int col)
 void matrix_set(matrix *mat, int row, int col, int value)
 {
     matrix_check(mat, row, col);
-    mat->data[row*mat->cols + col] = &value;
+    mat->data[row*mat->cols + col] = value;
 }
 
 int matrix_get (matrix *mat, int row, int col)
 {
     matrix_check(mat, row, col);
-    return *mat->data[row*mat->cols + col];
+    return mat->data[row*mat->cols + col];
 }
 
 void matrix_print(matrix *mat)

@@ -28,7 +28,7 @@ int doublePoint_comparator(const void *x, const void *y)
 {
     doublePoint dpx = *(doublePoint*)x, dpy = *(doublePoint*)y;
     int len_x = distSq(dpx.first, dpx.second), len_y = distSq(dpy.first, dpy.second);
-    return len_x>len_y?1:0;
+    return len_x>len_y?0:1;
 }
 
 void doublePoint_print(doublePoint dp)
@@ -46,24 +46,33 @@ typedef struct ppvector{
 
 void ppvector_init(ppvector* s)
 {
-    s->size = 10000;
-    s->data = malloc(sizeof(doublePoint*) * s->size);
-    memset(s->data, '\0', sizeof(doublePoint*) * s->size);
+    s->size = 0;
+    s->data = NULL;
     s->count = 0;
 }
+
+
+void ppvector_push(ppvector *v, doublePoint e) {
+    if (v->size == 0) {
+        v->size = 10;
+        v->data = malloc(sizeof(doublePoint) * v->size);
+        memset(v->data, '\0', sizeof(doublePoint) * v->size);
+    }
+
+    // condition to increase v->data:
+    // last slot exhausted
+    if (v->size == v->count) {
+        v->size *= 2;
+        v->data = realloc(v->data, sizeof(doublePoint) * v->size);
+    }
+
+    v->data[v->count] = e;
+    v->count++;
+}
+
 int ppvector_count(ppvector*s)
 {
     return s->count;
-}
-
-void ppvector_push(ppvector* v, doublePoint p)
-{
-    if (v->size == v->count) {
-        v->size *= 2;
-        v->data = realloc(v->data, sizeof(doublePoint*) * v->size);
-    }
-    v->data[v->count] = p;
-    v->count++;
 }
 
 void ppvector_pop(ppvector* s)

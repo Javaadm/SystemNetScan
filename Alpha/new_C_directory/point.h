@@ -31,8 +31,8 @@ return res;
 int swap(Point *p1, Point *p2)
 {
 Point temp = *p1;
-p1 = p2;
-p2 = &temp;
+*p1 = *p2;
+*p2 = temp;
 }
 
 // A utility function to return square of distance
@@ -76,27 +76,34 @@ int compare(const void *vp1, const void *vp2)
 pvector get_convexHull(pvector *points)
 {
     // Find the bottommost point
-    int n = points->count + 1;
-    int ymin = points->data[0].y, min = 0;
+    int n = pvector_count(points);
+    // printf("\n,%d,", n);
+    Point ymin_point = pvector_get(points, 0);
+    int ymin = ymin_point.y;
+    int min = 0;
     for (int i = 1; i < n; i++)
     {
         int y = points->data[i].y;
 
         // Pick the bottom-most or chose the left
         // most point in case of tie
-        if ((y < ymin) || (ymin == y &&
-        points->data[i].x < points->data[min].x))
-        ymin = points->data[i].y, min = i;
+        if ((y < ymin) || (ymin == y && (points->data[i].x < points->data[min].x)))
+        {
+            ymin = points->data[i].y, min = i;
+        }
     }
 
     // Place the bottom-most point at first position
-    swap(&points->data[0], &points->data[min]);
+    // Point_print(points->data[0]);
+    // Point_print(points->data[min]);
+    swap(&(points->data[0]), &(points->data[min]));
 
     // Sort n-1 points with respect to the first point.
     // A point p1 comes before p2 in sorted output if p2
     // has larger polar angle (in counterclockwise
     // direction) than p1
     p0 = points->data[0];
+    // Point_print(p0);
     qsort(&points->data[1], n-1, sizeof(Point), compare);
 
     // If two or more points make same angle with p0,
@@ -112,9 +119,7 @@ pvector get_convexHull(pvector *points)
         while (i < n-1 && orientation(p0, points->data[i],
                 points->data[i+1]) == 0)
         i++;
-
-
-        points[m] = points[i];
+        points->data[m] = points->data[i];
         m++;  // Update size of modified array
     }
 
@@ -127,6 +132,7 @@ pvector get_convexHull(pvector *points)
     // Create an empty stack and push first three points
     // to it.
     pvector S;
+    pvector_init(&S);
     pvector_push(&S, points->data[0]);
     pvector_push(&S, points->data[1]);
     pvector_push(&S, points->data[2]);

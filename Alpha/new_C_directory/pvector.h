@@ -36,19 +36,28 @@ typedef struct stack{
 
 void pvector_init(pvector* s)
 {
-    s->size = 10000;
-    s->data = malloc(sizeof(Point*) * s->size);
-    memset(s->data, '\0', sizeof(Point*) * s->size);
+    s->size = 0;
+    s->data = NULL;
     s->count = 0;
 }
 
-void pvector_push(pvector* v, Point p)
-{
+
+void pvector_push(pvector *v, Point e) {
+    if (v->size == 0) {
+        v->size = 10;
+        v->data = malloc(sizeof(Point) * v->size);
+        memset(v->data, '\0', sizeof(Point) * v->size);
+        // printf("\n%d", sizeof((*v).data));
+    }
+
+    // condition to increase v->data:
+    // last slot exhausted
     if (v->size == v->count) {
         v->size *= 2;
-        v->data = realloc(v->data, sizeof(Point*) * v->size);
+        v->data = realloc(v->data, sizeof(Point) * v->size);
     }
-    v->data[v->count] = p;
+
+    v->data[v->count] = e;
     v->count++;
 }
 
@@ -85,9 +94,18 @@ int pvector_not_empty(pvector *v)
     return v->count + 1;
 }
 
+
 void pvector_free(pvector *s)
 {
     free(s->data);
+}
+
+void pvector_rewrite(pvector *base, pvector *tocopy)
+{
+    pvector_free(base);
+    pvector_init(base);
+    for(int i=0; i<pvector_count(tocopy); i++)
+        pvector_push(base, pvector_get(tocopy, i));
 }
 
 #endif //NEW_C_DIRECTORY_PVECTOR_H

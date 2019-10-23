@@ -104,6 +104,7 @@ stack<Point> get_convexHull(vector<Point>& points, int n)
     // has larger polar angle (in counterclockwise
     // direction) than p1
     p0 = points[0];
+    cout << "\np0 is:" << p0.x << ", " << p0.y << '\n';
     qsort(&points[1], n-1, sizeof(Point), compare);
 
     // If two or more points make same angle with p0,
@@ -164,7 +165,7 @@ bool compare_lines(const pair<Point, Point> & a, const pair<Point, Point> & b)
 
 vector<pair<int, int>> get_pass_variety()
 {
-    string system_path = "/home/mikhail/Work_with_documents/Trash_hall/Scan_processing/C_directory/";
+    string system_path = "/home/mikhail/Work_with_documents/Alpha/C_directory/";
     string open_file = system_path + "image.txt";
     string write_file = system_path + "coordinates_2p.txt";
     ifstream cin;
@@ -179,6 +180,11 @@ vector<pair<int, int>> get_pass_variety()
         for (int j = 0; j < columns; j++)
             cin >> image[i][j];
 
+    int counter = 0;
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < columns; j++)
+            counter += (image[i][j] == 255);
+    cout << '\n' << counter << '\n';
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
             if (image[i][j] == 255 && is_used[i][j] == false) {
@@ -250,6 +256,7 @@ vector<pair<int, int>> get_pass_variety()
 
 int main() {
     vector<pair<int, int>> pass_variety = get_pass_variety();
+    cout << "First of variety" << pass_variety[0].first << ", " << pass_variety[0].second << '\n';
     vector<Point> points;
     for (pair<int, int> point: pass_variety)
     {
@@ -260,6 +267,7 @@ int main() {
 
     stack<Point> convexHull = get_convexHull(points, (int)pass_variety.size());
 
+
     fcloseall();
     cout << "\n hull size: " << convexHull.size();
 
@@ -269,6 +277,7 @@ int main() {
     {
         hull.push_back(convexHull.top());
         convexHull.pop();
+        cout << '\n' << hull.back().x << ", " << hull.back().y;
     }
 
     vector<pair<Point, Point>> lines;
@@ -313,7 +322,7 @@ int main() {
     }
 
     ofstream diag_out;
-    string system_path = "/home/mikhail/Work_with_documents/Trash_hall/Scan_processing/C_directory/";
+    string system_path = "/home/mikhail/Work_with_documents/Alpha/C_directory/";
     diag_out.open((system_path + "coordinates_4p.txt").c_str());
     for (int i = 0; i < 2; i++)
     {
