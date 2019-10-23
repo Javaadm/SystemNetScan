@@ -18,7 +18,7 @@
 
 // const char system_path[] = "./C_directory/";
 // char system_path[] = "/home/mikhail/Work_with_documents/Alpha/new_C_directory";
-char system_path[] = "/new_C_directory";
+char system_path[] = "./new_C_directory";
 
 void print(int a)
 {
