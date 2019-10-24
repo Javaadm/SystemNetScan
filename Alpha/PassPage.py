@@ -88,15 +88,15 @@ class PassPage:
         return edges
 
     def cpp_launcher(self):
-        os.system("./C_directory/get_pass_corners")
+        os.system("./new_C_directory/get_pass_corners")
 
     def cleaner(self):
-        os.system("rm C_directory/image.txt")
-        os.system("rm C_directory/coordinates_4p.txt")
+        os.system("rm new_C_directory/image.txt")
+        os.system("rm new_C_directory/coordinates_4p.txt")
 
     def LETS_ROLL(self):
        edges = self.get_edges()
-       with open("C_directory/image.txt", "w") as f:
+       with open("new_C_directory/image.txt", "w") as f:
            a = edges.tolist()
            f.write(str(len(a)) + ' ' + str(len(a[0])))
            for i in a:
@@ -106,7 +106,7 @@ class PassPage:
        self.cpp_launcher()
        # end of cpp block
        coords = []
-       with open("C_directory/coordinates_4p.txt", "r+") as file:
+       with open("new_C_directory/coordinates_4p.txt", "r+") as file:
            arr = file.readline().split(' ')
            coords = [int(x) for x in (arr)]
        diag1 = Segment(Point(coords[0], coords[1]), Point(coords[2], coords[3]))

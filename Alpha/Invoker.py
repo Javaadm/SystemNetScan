@@ -8,8 +8,8 @@ import json
 import urllib
 import os
 
-# passport = UkrPass("images/pass.pdf", "images/", deletion_key=False, analysis_key=False, debugging=True)
-# print (passport.pass_info)
+passport = UkrPass("images/pass.pdf", "images/", deletion_key=False, analysis_key=True, debugging=True)
+print (passport.pass_info)
 # passport.create_file()
 
 
