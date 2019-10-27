@@ -111,6 +111,7 @@ void ppvector_set(ppvector *v, int index, doublePoint value)
 void ppvector_free(ppvector *s)
 {
     free(s->data);
+    ppvector_init(s);
 }
 
 #endif //NEW_C_DIRECTORY_PPVECTOR_H

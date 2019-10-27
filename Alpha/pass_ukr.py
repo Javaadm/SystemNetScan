@@ -1,20 +1,18 @@
-from PIL import Image, ImageDraw, ImageFont
-from pdf2image import convert_from_path
 import pytesseract
-import tesserocr
-from PIL import Image
-import json
 from Alpha.PassPage import PassPage
 from Alpha.PointVector import Point
 from Alpha.Pass import Pass
 
 
+
 class UkrPass(Pass):
-    def __init__(self, path_to_pdf, path_to_images, deletion_key=True, analysis_key=True, debugging=False):
+    def __init__(self, path_to_pdf, path_to_images, deletion_key=True, analysis_key=True, is_debugging=False):
+        self.debugging_log("init", is_debugging)
         super().__init__(path_to_pdf=path_to_pdf, path_to_images=path_to_images, deletion_key=deletion_key,
-                         analysis_key=analysis_key, debugging=debugging)
+                         analysis_key=analysis_key, is_debugging=is_debugging)
 
     def arrange_pages(self):
+        self.debugging_log("arrange_pages", self.is_debugging)
         new_list = (self.find_pages(["passport"]))
         self.pages = [new_list[key] for key in sorted(new_list.keys())]
 
@@ -22,12 +20,10 @@ class UkrPass(Pass):
         pass
 
     def get_fields(self):
+        self.debugging_log("get_fields", self.is_debugging)
         second_page = self.get_second_page_text()
         pass_info = second_page
         return pass_info
-
-    def prepare_json(self):
-        pass
 
     def cut_page_number(self, page):
         crop = [x for x in page.get_image().size] * 2

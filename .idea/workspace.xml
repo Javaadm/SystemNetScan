@@ -3,30 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="669c6ccf-24c0-4664-a561-50dcab547160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/Abstract_Documents/JsonWorker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Abstract_Documents/JsonWorker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/C_directory/coordinates_2p.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_directory/coordinates_2p.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/C_directory/coordinates_4p.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_directory/coordinates_4p.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/C_directory/image.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_directory/image.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/Invoker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Invoker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Pass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/PassPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/PassPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/images/out9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/coordinates_4p.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/get_pass_angles" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/image.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/new_C_directory.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/new_C_directory.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/new_C_directory.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/cmake-build-debug/new_C_directory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/point.h" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/point.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/ppvector.h" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/ppvector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/pvector.h" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/pvector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/vector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directorycoordinates_4p.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_implementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/pass_ukr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/pass_ukr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/C_directory" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/C_directory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +193,9 @@
       <workItem from="1570733595651" duration="19991000" />
       <workItem from="1570866548049" duration="8496000" />
       <workItem from="1570878526930" duration="54040000" />
-      <workItem from="1571848353268" duration="22825000" />
+      <workItem from="1571848353268" duration="38442000" />
+      <workItem from="1572100536274" duration="10743000" />
+      <workItem from="1572112382444" duration="22825000" />
     </task>
     <servers />
   </component>
@@ -218,7 +216,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1571938241550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
+    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1572196405630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Alpha.coverage" NAME="Alpha Coverage Results" MODIFIED="1570554047095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Scan_processing.coverage" NAME="Scan_processing Coverage Results" MODIFIED="1570654098044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
   </component>

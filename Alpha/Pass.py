@@ -6,8 +6,8 @@ import pytesseract
 
 
 class Pass(object):
-    def __init__(self, path_to_pdf: str, path_to_images: str, deletion_key=True, analysis_key=True, debugging=False):
-        self.debugging = debugging
+    def __init__(self, path_to_pdf: str, path_to_images: str, deletion_key=True, analysis_key=True, is_debugging=False):
+        self.is_debugging = is_debugging
         self.deletion_key = deletion_key
         self.analysis_key = analysis_key
         self.pages = self.pdf_to_pages(path_to_pdf, path_to_images)
@@ -15,6 +15,8 @@ class Pass(object):
         self.pass_info = self.get_fields()
 
     def pdf_to_pages(self, path_to_pdf, path_for_images):
+        self.debugging_log("pdf_to_pages", self.is_debugging)
+        # return [PassPage(path_for_images + "out0.jpg", self.deletion_key, self.analysis_key)]
         pages = convert_from_path(path_to_pdf, 500)
         if self.analysis_key:
             for n in range(len(pages)):
@@ -26,7 +28,7 @@ class Pass(object):
         for page in self.pages:
             image = self.cut_page_number(page)
             text = pytesseract.image_to_string(image, lang='eng').lower()
-            if self.debugging:
+            if self.is_debugging:
                 print(page.path)
                 print(text)
                 print()
@@ -40,7 +42,7 @@ class Pass(object):
                 continue
             image = self.cut_page_number(page.upside_down())
             text = pytesseract.image_to_string(image, lang='eng').lower()
-            if self.debugging:
+            if self.is_debugging:
                 print(page.path)
                 print(text)
                 print()
@@ -73,6 +75,10 @@ class Pass(object):
                     # print('%' + key + '%')
         document.save(path_to_file)
 
+    @staticmethod
+    def debugging_log(s, is_debugging):
+        if is_debugging:
+            print(s)
 
 
 

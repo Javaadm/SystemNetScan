@@ -172,6 +172,7 @@ vector<pair<int, int>> get_pass_variety()
     cin.open(open_file.c_str());
     int rows, columns;
     cin >> rows >> columns;
+    cout << "height and width are:" << rows << ", " << columns << endl;
     vector<vector<short>> image(rows, vector<short>(columns, 0));
     vector<vector<pair<int, int>>> varieties;
     vector<vector<short>> is_used(rows,vector<short>(columns, false));

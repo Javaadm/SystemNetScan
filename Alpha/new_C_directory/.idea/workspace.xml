@@ -11,7 +11,44 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02d247ed-0a76-48ea-b548-4cac6bfc42e9" name="Default Changelist" comment="" />
+    <list default="true" id="02d247ed-0a76-48ea-b548-4cac6bfc42e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C_directory/image.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C_directory/image.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoker.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Pass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PassPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PassPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/out9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/out9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/new_C_directory.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/new_C_directory.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/new_C_directory.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/new_C_directory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/point.h" beforeDir="false" afterPath="$PROJECT_DIR$/point.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppvector.h" beforeDir="false" afterPath="$PROJECT_DIR$/ppvector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pvector.h" beforeDir="false" afterPath="$PROJECT_DIR$/pvector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/vector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new_C_directorycoordinates_4p.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C_implementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pass_ukr.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pass_ukr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trash_hall/Scan_processing/C_directory/cmake-build-debug/C_directory" beforeDir="false" afterPath="$PROJECT_DIR$/../../Trash_hall/Scan_processing/C_directory/cmake-build-debug/C_directory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trash_hall/Scan_processing/C_directory/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Trash_hall/Scan_processing/C_directory/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +102,9 @@
       <updated>1571325816930</updated>
       <workItem from="1571325819765" duration="69221000" />
       <workItem from="1571765211811" duration="20891000" />
+      <workItem from="1572094085756" duration="2022000" />
+      <workItem from="1572100526645" duration="7317000" />
+      <workItem from="1572112378765" duration="13977000" />
     </task>
     <servers />
   </component>

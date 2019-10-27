@@ -1,24 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 #include <math.h>
+#include <assert.h>
 #include "point.h"
-#include "vector.h"
 #include "pvector.h"
 #include "ppvector.h"
 #include "matrix.h"
-// #include <iostream>
-// #include <algorithm>
-// #include <fstream>
-// #include <vector>
-// #include <string>
-// #include <stack>
-// #include <cmath>
 
-
-// const char system_path[] = "./C_directory/";
-// char system_path[] = "/home/mikhail/Work_with_documents/Alpha/new_C_directory";
-char system_path[] = "./new_C_directory";
 
 void print(int a)
 {
@@ -37,45 +25,40 @@ int int_comp(const void *a, const void *b)
 //     strcat(*first, second);
 // }
 
-pvector get_pass_variety()
+void get_pass_variety(int rows, int columns, int* arr, pvector *biggest_variety)
 {
-    char *open_file = NULL;
-    char end_file[] = "/image.txt";
-    int full_size = sizeof(open_file)+sizeof(system_path)+sizeof(end_file);
-    open_file = realloc(open_file, full_size);
-    memset(open_file, '\0', full_size);
-    strcat(open_file, system_path);
-    strcat(open_file, end_file);
-    printf("\n *%s* \n", open_file);
-    FILE *input = fopen(open_file, "r");
-    if(input == NULL)
-        perror("In get_pass_variety");
-    int rows, columns;
-    fscanf(input, "%d %d", &rows, &columns);
-    // printf("\n %d, %d \n", rows, columns);
-    matrix image;
-    matrix_init(&image, rows, columns);
-    pvector biggest_variety, current_variety;
-    pvector_init(&biggest_variety);
-    pvector_init(&current_variety);
-    matrix is_used;
+    matrix image, is_used;
+    pvector current_variety;
+    // int counter = 0;
+    // for(int i = 0; i < rows * columns; i++)
+    //     counter += (arr[i] != 0);
+    // print(counter);
+    printf("start of initialization\n");
+    // matrix_init(&image, rows, columns);
     matrix_init(&is_used, rows, columns);
-
-    for (int i = 0; i < rows; i++)
-        for (int j = 0; j < columns; j++)
-        {
-            int pixel;
-            fscanf(input, " %d", &pixel);
-            matrix_set(&image, i, j, pixel);
-        }
-    vector size_holder;
-    vector_init(&size_holder, sizeof(int));
+    pvector_init(biggest_variety);
+    pvector_init(&current_variety);
+    printf("matrix assignation\n");
+    image.rows = rows;
+    image.cols = columns;
+    image.data = arr;
+    // for (int i = 0; i < rows; i++)
+    //     for (int j = 0; j < columns; j++)
+    //     {
+    //         matrix_set(&image, i, j, arr[i * columns + j]);
+    //     }
+    // printf("success with matrix\n");
+    // print(matrix_get(&image, 0, 0));
+    // print(matrix_get(&image, 0, 1));
+    // print(matrix_get(&image, 0, 2));
     // matrix_print(&image);
+    // printf("start of looking for pass variety\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
-            if (matrix_get(&image, i, j) == 255 && matrix_get(&is_used, i, j) == '\0') {
-                //creating a new variety
-
+            if (matrix_get(&image, i, j) != 0 && matrix_get(&is_used, i, j) == '\0') {
+                if (matrix_get(&image, i, j) != 255)
+                    printf("Alert!%d, %d with %d\n", i, j, matrix_get(&image, i, j));
+                // printf("creating a new variety\n");
                 pvector for_bfs;
                 pvector_init(&for_bfs);
                 pvector_push(&for_bfs, get_Point(i, j));
@@ -83,19 +66,19 @@ pvector get_pass_variety()
                 {
                     int x = pvector_top(&for_bfs).x, y = pvector_top(&for_bfs).y;
                     pvector_pop(&for_bfs);
-                    //checking x and y
+                    // printf("checking x and y\n");
                     if((x < 0) || (x >= rows) || (y < 0) || (y >= columns))
                         continue;
                     if((matrix_get(&is_used, x, y) == 1) || (matrix_get(&image, x, y) == 0))
                         continue;
-
-                    //adding current value to variety
+                    // if (matrix_get(&image, i, j) != 255);
+                    //     printf("Alert!%d, %d\n", i, j);
+                    // printf("adding current value to variety\n");
                     //print(sizeof(current_variety.data));
                     pvector_push(&current_variety, get_Point(x, y));
                     //print(sizeof(current_variety.data));
                     matrix_set(&is_used, x, y, 1);
-
-                    //trying near points
+                    // printf("trying near points\n");
                     for (int i = -2; i<=2; i++)
                     {
                         for (int j = -2; j<=2; j++)
@@ -105,64 +88,42 @@ pvector get_pass_variety()
                                 continue;
                             if((matrix_get(&is_used, new_x, new_y) == 1) || (matrix_get(&image, new_x, new_y) == 0))
                                 continue;
-
-                            //adding a new point
+                            // printf("adding a new point\n");
                             pvector_push(&for_bfs, get_Point(new_x, new_y));
+                            // printf("added\n");
                         }
                     }
                 }
-                //print(pvector_count(&current_variety));
-                if(pvector_count(&current_variety) > pvector_count(&biggest_variety))
+                if(pvector_count(&current_variety) > pvector_count(biggest_variety))
                 {
-                    // pvector_free(&biggest_variety);
-                    // pvector_init(&biggest_variety);
-                    // print(pvector_count(&current_variety));
-                    pvector_rewrite(&biggest_variety, &current_variety);
-                    // printf("\n%d, %d", pvector_count(&biggest_variety), pvector_count(&current_variety));
-                    // printf("\n%d, %d", sizeof(biggest_variety.data), sizeof(current_variety.data));
+                    // printf("rewriting biggest variety\n");
+                    pvector_rewrite(biggest_variety, &current_variety);
                 }
-                vector_add(&size_holder, pvector_count(&current_variety));
+                // printf("freeing current and bfs varieties\n");
+                // printf("%d\n", pvector_count((&current_variety)));
                 pvector_free(&current_variety);
-                pvector_init(&current_variety);
-                // print(sizeof(current_variety.data));
+                // printf("%d\n", pvector_count((&for_bfs)));
+                pvector_free(&for_bfs);
             }
         }
     }
-    // int counter = 0;
-    // for(int i = 0; i<rows; i++)
-    //     for(int j = 0; j<columns; j++)
-    //         if(matrix_get(&image, i, j) == 255)
-    //             counter++;
-    // print(counter);
-    qsort(size_holder.data, vector_count(&size_holder), sizeof(int), int_comp);
-    int sum = 0;
-    for(int i = 0; i < vector_count(&size_holder); i++)
-        sum += vector_get(&size_holder, i);
-        // print(vector_get(&size_holder, i));
-    // print(sum);
-    matrix_free(&image);
+    printf("freeing matrix\n");
+    // matrix_free(&image);
     matrix_free(&is_used);
-    fclose(input);
-
-    return biggest_variety;
+    return;
 }
 
 
-
-int main() {
-    pvector pass_variety = get_pass_variety();
+void mainF(int height, int width, int *arr, int *result) {
+    print(height);
+    print(width);
+    pvector pass_variety;
+    get_pass_variety(height, width, arr, &pass_variety);
     printf("\n%d\n", pvector_count(&pass_variety));
-    // print(sizeof(pass_variety.data));
-    // Point_print(pvector_get(&pass_variety, pvector_count(&pass_variety)+1));
 
-    pvector hull = get_convexHull(&pass_variety);
-    // print(pvector_count(&hull));
-    // printf("\n");
-    // for(int i=0; i<pvector_count(&hull); i++)
-    // {
-    //     Point_print(pvector_get(&hull, i));
-    // }
-
+    pvector hull;
+    get_convexHull(&pass_variety, &hull);
+    print(pvector_count(&hull));
     ppvector lines;
     ppvector_init(&lines);
     for(int i = 0; i < pvector_count(&hull); i++)
@@ -170,8 +131,13 @@ int main() {
         {
             ppvector_push(&lines, get_doublePoint(pvector_get(&hull, i), pvector_get(&hull, j)));
         }
+    printf("\nqsort is going\n");
     qsort(&lines.data[0], ppvector_count(&lines), sizeof(doublePoint), doublePoint_comparator);
 
+    // for(int i = 0; i < ppvector_count(&lines); i++)
+    // {
+    //     doublePoint_print(ppvector_get(&lines, i));
+    // }
     Point line1, line2;
     doublePoint line1dp = ppvector_get(&lines, 0);
     line1.x = line1dp.first.x - line1dp.second.x;
@@ -197,30 +163,23 @@ int main() {
         }
     }
 
-    char *output_path = NULL;
-    char end_file[] = "/coordinates_4p.txt";
-    int full_size = sizeof(output_path) + sizeof(system_path) + sizeof(end_file);
-    output_path = realloc(output_path, full_size);
-    memset(output_path, '\0', full_size);
-    strcat(&output_path[0], system_path);
-    strcat(output_path, end_file);
-    printf("*%s* \n\n", output_path);
-    FILE *output = fopen(output_path, "w");
-    if(output == NULL)
-        perror(output_path);
-
+    // printf("\n almost end\n");
+    // int *result = malloc(sizeof(int)*8);
     for (int i = 0; i < 2; i++)
     {
+        // printf("%d start", i);
         doublePoint dp = ppvector_get(&lines, i);
-        // doublePoint_print(dp);
-        fprintf(output, "%d %d ", dp.first.y, dp.first.x);
-        fprintf(output, "%d %d", dp.second.y, dp.second.x);
-        if(i == 0)
-            fprintf(output, " ");
+        // printf("first");
+        result[4*i + 0] = dp.first.x;
+        result[4*i + 1] = dp.first.y;
+        // printf("second");
+        result[4*i + 2] = dp.second.x;
+        result[4*i + 3] = dp.second.y;
+        // printf("%d end", i);
     }
+    printf("end");
     ppvector_free(&lines);
     pvector_free(&pass_variety);
     pvector_free(&hull);
-    fclose(output);
-    return 0;
+    // return result;
 }

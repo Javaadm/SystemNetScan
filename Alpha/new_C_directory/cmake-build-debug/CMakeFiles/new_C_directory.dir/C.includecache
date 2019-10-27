@@ -11,14 +11,10 @@ stdlib.h
 -
 stdio.h
 -
-string.h
--
 math.h
 -
 point.h
 /home/mikhail/Work_with_documents/Alpha/new_C_directory/point.h
-vector.h
-/home/mikhail/Work_with_documents/Alpha/new_C_directory/vector.h
 pvector.h
 /home/mikhail/Work_with_documents/Alpha/new_C_directory/pvector.h
 ppvector.h

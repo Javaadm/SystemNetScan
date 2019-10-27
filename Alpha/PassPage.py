@@ -1,10 +1,12 @@
 from Alpha.Segment import Segment
 from Alpha.PointVector import Point
+from Alpha.C_implementation import get_pass_corners
 from PIL import Image
 import numpy
 import math
 import os
 import cv2 as cv
+
 
 
 class PassPage:
@@ -22,6 +24,7 @@ class PassPage:
     def save_image(self, path=None, image=None):
         if path is None:
             path = self.path
+            # path = "./images/jopa.jpg"
         if image is None:
             Image.open(self.path).save(path)
         else:
@@ -66,6 +69,11 @@ class PassPage:
             image = PassPage.fill_around(image, canvas_size=canvas_size, center=center, color=color)
         return image
 
+    @staticmethod
+    def validate(upper_left, lower_right, max_size):
+        ret = True
+        return 0 <= upper_left.x < lower_right.x <= max_size[0] and 0 <= upper_left.y < lower_right.y <= max_size[1]
+
     def get_image_part(self, upper_left, lower_right, canvas_size=None, center=None,
                        color="white", brightness_border=180):
         return PassPage.prepare_image_part(image=self.get_image(), upper_left=upper_left, lower_right=lower_right,
@@ -87,49 +95,45 @@ class PassPage:
         edges = cv.Canny(edges, 7, 14)
         return edges
 
-    def cpp_launcher(self):
-        os.system("./new_C_directory/get_pass_corners")
-
-    def cleaner(self):
-        os.system("rm new_C_directory/image.txt")
-        os.system("rm new_C_directory/coordinates_4p.txt")
+    # def cleaner(self):
+    #     os.system("rm new_C_directory/image.txt")
+    #     os.system("rm new_C_directory/coordinates_4p.txt")
 
     def LETS_ROLL(self):
-       edges = self.get_edges()
-       with open("new_C_directory/image.txt", "w") as f:
-           a = edges.tolist()
-           f.write(str(len(a)) + ' ' + str(len(a[0])))
-           for i in a:
-               for j in i:
-                   f.write(' ' + str(j))
-       # start of cpp block
-       self.cpp_launcher()
-       # end of cpp block
-       coords = []
-       with open("new_C_directory/coordinates_4p.txt", "r+") as file:
-           arr = file.readline().split(' ')
-           coords = [int(x) for x in (arr)]
-       diag1 = Segment(Point(coords[0], coords[1]), Point(coords[2], coords[3]))
-       diag2 = Segment(Point(coords[4], coords[5]), Point(coords[6], coords[7]))
-       center = Segment(diag1.get_center(), diag2.get_center()).get_center()
-       center.round()
-       image, diag1, diag2 = \
-           self.fill_and_give_points(self.get_image(),
-                                     diag1, diag2, (int(diag1.get_length()), int(diag1.get_length())), center)
-       side1 = Segment(diag1.start, diag2.start)
-       side2 = Segment(diag1.start, diag2.end)
-       if side1.get_length() < side2.get_length():
-           angle = side2.get_polar_angle()
-       else:
-           angle = side1.get_polar_angle()
-       image = image.rotate(angle*180/math.pi)
-       diag1.rotate(-angle, center)
-       diag2.rotate(-angle, center)
-       upper_left = Point((diag1.get_min_x() + diag2.get_min_x())//2,
-                           (diag1.get_min_y() + diag2.get_min_y())//2)
-       lower_right = Point((diag1.get_max_x() + diag2.get_max_x())//2,
-                           (diag1.get_max_y() + diag2.get_max_y())//2)
-       image = self.crop(image, upper_left, lower_right)
-       self.save_image(image=image)
-       self.cleaner()
+        edges = self.get_edges()
+        # fucking debug starts
+        # with open("new_C_directory/image.txt", "w") as f:
+        #     a = edges.tolist()
+        #     f.write(str(len(a)) + ' ' + str(len(a[0])))
+        #     for i in a:
+        #         for j in i:
+        #             f.write(' ' + str(j))
+        # fucking debug ends
+        # start of cpp block
+        coords = get_pass_corners(edges)
+        print(coords)
+        # end of cpp block
+        diag1 = Segment(Point(coords[1], coords[0]), Point(coords[3], coords[2]))
+        diag2 = Segment(Point(coords[5], coords[4]), Point(coords[7], coords[6]))
+        center = Segment(diag1.get_center(), diag2.get_center()).get_center()
+        center.round()
+        image, diag1, diag2 = \
+            self.fill_and_give_points(self.get_image(),
+                                      diag1, diag2, (int(diag1.get_length()), int(diag1.get_length())), center)
+        side1 = Segment(diag1.start, diag2.start)
+        side2 = Segment(diag1.start, diag2.end)
+        if side1.get_length() < side2.get_length():
+            angle = side2.get_polar_angle()
+        else:
+            angle = side1.get_polar_angle()
+        image = image.rotate(angle * 180 / math.pi)
+        diag1.rotate(-angle, center)
+        diag2.rotate(-angle, center)
+        upper_left = Point((diag1.get_min_x() + diag2.get_min_x()) // 2,
+                           (diag1.get_min_y() + diag2.get_min_y()) // 2)
+        lower_right = Point((diag1.get_max_x() + diag2.get_max_x()) // 2,
+                            (diag1.get_max_y() + diag2.get_max_y()) // 2)
+        image = self.crop(image, upper_left, lower_right)
+        print("before save")
+        self.save_image(image=image)
 

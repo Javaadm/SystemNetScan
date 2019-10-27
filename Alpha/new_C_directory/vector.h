@@ -61,29 +61,6 @@ void *vector_get(vector *v, int index)
     return v->data[index];
 }
 
-void vector_delete(vector *v, int index)
-{
-    if (index >= v->count) {
-        return;
-    }
-
-    v->data[index] = NULL;
-
-    int i, j;
-    void **newarr = (void**)malloc(sizeof(void*) * v->count * 2);
-    for (i = 0, j = 0; i < v->count; i++) {
-        if (i != index) {
-            newarr[j] = v->data[i];
-            j++;
-        }
-    }
-
-    free(v->data);
-
-    v->data = newarr;
-    v->count--;
-}
-
 void vector_pop(vector *v)
 {
     v->count--;
@@ -92,6 +69,7 @@ void vector_pop(vector *v)
 void vector_free(vector *v)
 {
     free(v->data);
+    vector_init(v, v->char_size);
 }
 
 #endif

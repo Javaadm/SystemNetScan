@@ -73,14 +73,15 @@ int compare(const void *vp1, const void *vp2)
 }
 
 // Prints convex hull of a set of n points.
-pvector get_convexHull(pvector *points)
+void get_convexHull(pvector *points, pvector *hull)
 {
     // Find the bottommost point
     int n = pvector_count(points);
-    // printf("\n,%d,", n);
+    //printf("\n,%d,", n);
     Point ymin_point = pvector_get(points, 0);
     int ymin = ymin_point.y;
     int min = 0;
+    //printf("ymin assigned");
     for (int i = 1; i < n; i++)
     {
         int y = points->data[i].y;
@@ -96,14 +97,17 @@ pvector get_convexHull(pvector *points)
     // Place the bottom-most point at first position
     // Point_print(points->data[0]);
     // Point_print(points->data[min]);
+    //printf("swap");
     swap(&(points->data[0]), &(points->data[min]));
 
     // Sort n-1 points with respect to the first point.
     // A point p1 comes before p2 in sorted output if p2
     // has larger polar angle (in counterclockwise
     // direction) than p1
+    //printf("p0 going to be set");
     p0 = points->data[0];
     // Point_print(p0);
+    //printf("qsort going");
     qsort(&points->data[1], n-1, sizeof(Point), compare);
 
     // If two or more points make same angle with p0,
@@ -111,6 +115,7 @@ pvector get_convexHull(pvector *points)
     // Remember that, in above sorting, our criteria was
     // to keep the farthest point at the end when more than
     // one points have same angle.
+    //printf("deleting vertexes with the same angle");
     int m = 1; // Initialize size of modified array
     for (int i=1; i<n; i++)
     {
@@ -127,28 +132,29 @@ pvector get_convexHull(pvector *points)
     // convex hull is not possible
     if (m < 3)
     {
-        printf("Convex hull is not possible!!!");
+        //printf("Convex hull is not possible!!!");
     }
     // Create an empty stack and push first three points
     // to it.
-    pvector S;
-    pvector_init(&S);
-    pvector_push(&S, points->data[0]);
-    pvector_push(&S, points->data[1]);
-    pvector_push(&S, points->data[2]);
+    pvector_init(hull);
+    pvector_push(hull, points->data[0]);
+    pvector_push(hull, points->data[1]);
+    pvector_push(hull, points->data[2]);
 
+    //printf("hull building");
     // Process remaining n-3 points
     for (int i = 3; i < m; i++)
     {
         // Keep removing top while the angle formed by
         // points next-to-top, top, and points[i] makes
         // a non-left turn
-        while (orientation(nextToTop(&S), pvector_top(&S), points->data[i]) != 2)
-        pvector_pop(&S);
-        pvector_push(&S, points->data[i]);
+        while (orientation(nextToTop(hull), pvector_top(hull), points->data[i]) != 2)
+        pvector_pop(hull);
+        pvector_push(hull, points->data[i]);
     }
 
-    return S;
+    //printf("return");
+    return;
 }
 
 #endif //NEW_C_DIRECTORY_POINT_H

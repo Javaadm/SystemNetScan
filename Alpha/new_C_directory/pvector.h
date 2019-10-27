@@ -91,19 +91,19 @@ Point pvector_get(pvector *s, int index)
 
 int pvector_not_empty(pvector *v)
 {
-    return v->count + 1;
+    return v->count;
 }
 
 
 void pvector_free(pvector *s)
 {
     free(s->data);
+    pvector_init(s);
 }
 
 void pvector_rewrite(pvector *base, pvector *tocopy)
 {
     pvector_free(base);
-    pvector_init(base);
     for(int i=0; i<pvector_count(tocopy); i++)
         pvector_push(base, pvector_get(tocopy, i));
 }
