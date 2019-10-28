@@ -3,26 +3,48 @@
   <component name="ChangeListManager">
     <list default="true" id="669c6ccf-24c0-4664-a561-50dcab547160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/C_directory/coordinates_2p.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_directory/coordinates_2p.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/C_directory/coordinates_4p.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_directory/coordinates_4p.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/C_directory/image.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_directory/image.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Abstract_Documents/JsonWorker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Abstract_Documents/JsonWorker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/Invoker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Invoker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/Pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Pass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/PassPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/PassPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/new_C_directory.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/new_C_directory.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/cmake-build-debug/CMakeFiles/new_C_directory.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/cmake-build-debug/new_C_directory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/point.h" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/point.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/ppvector.h" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/ppvector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/pvector.h" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/pvector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/vector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directorycoordinates_4p.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/C_implementation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alpha/pass_ukr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/pass_ukr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/CMakeFiles/C_directory.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/C_directory" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/cmake-build-debug/C_directory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Trash_hall/Scan_processing/C_directory/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/.idea/Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/Test.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/Test.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/testLib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Test/testLib.so" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +217,7 @@
       <workItem from="1570878526930" duration="54040000" />
       <workItem from="1571848353268" duration="38442000" />
       <workItem from="1572100536274" duration="10743000" />
-      <workItem from="1572112382444" duration="22825000" />
+      <workItem from="1572112382444" duration="34041000" />
     </task>
     <servers />
   </component>
@@ -216,7 +238,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1572196405630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
+    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1572259942248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Alpha.coverage" NAME="Alpha Coverage Results" MODIFIED="1570554047095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Scan_processing.coverage" NAME="Scan_processing Coverage Results" MODIFIED="1570654098044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
   </component>
