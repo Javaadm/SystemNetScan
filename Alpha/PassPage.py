@@ -2,6 +2,7 @@ from Alpha.Segment import Segment
 from Alpha.PointVector import Point
 from Alpha.C_implementation import get_pass_corners
 from PIL import Image
+import pytesseract
 import numpy
 import math
 import os
@@ -68,6 +69,31 @@ class PassPage:
         if do_fill:
             image = PassPage.fill_around(image, canvas_size=canvas_size, center=center, color=color)
         return image
+
+    @staticmethod
+    def get_all_working_parameters(path_to_image, coords, answer, lang=None):
+        if lang is None:
+            lang_list = ["eng"]
+        else:
+            lang_list = [lang]
+        upper_left = [coords[0], coords[1]]
+        lower_right = [coords[2], coords[3]]
+        height = coords[2] - coords[0]
+        width = coords[3] - coords[1]
+        image = Image.open(path_to_image)
+        canvas_size_list = [[x * height, x * width] for x in numpy.arange(1, 5, 0.2)]
+        color_list = ["white", "black"]
+        brightness_border_list = range(130, 220, 5)
+        ret = []
+        for lang in lang_list:
+            for canvas_size in canvas_size_list:
+                for color in color_list:
+                    for brightness_border in brightness_border_list:
+                        piece_of_image = PassPage.prepare_image_part(image, upper_left=upper_left, lower_right=lower_right,
+                                                                     canvas_size=canvas_size, color=color, brightness_border=brightness_border)
+                        if answer == pytesseract.image_to_string(piece_of_image, lang=lang):
+                            ret.append({"lang": lang, "canvas_size": canvas_size, "color": color,
+                                        "brightness_border": brightness_border})
 
     @staticmethod
     def validate(upper_left, lower_right, max_size):
