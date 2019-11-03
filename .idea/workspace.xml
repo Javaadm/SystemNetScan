@@ -3,7 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="669c6ccf-24c0-4664-a561-50dcab547160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Abstract_Documents/JsonWorker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Abstract_Documents/JsonWorker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/Invoker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/Invoker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alpha/PassPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/PassPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/images/out9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/images/out9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha/new_C_directory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha/new_C_directory/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +197,8 @@
       <workItem from="1570878526930" duration="54040000" />
       <workItem from="1571848353268" duration="38442000" />
       <workItem from="1572100536274" duration="10743000" />
-      <workItem from="1572112382444" duration="36974000" />
+      <workItem from="1572112382444" duration="41494000" />
+      <workItem from="1572453337975" duration="8123000" />
     </task>
     <servers />
   </component>
@@ -197,7 +219,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1572259942248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
+    <SUITE FILE_PATH="coverage/Work_with_documents$Invoker.coverage" NAME="Invoker Coverage Results" MODIFIED="1572454365974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Alpha.coverage" NAME="Alpha Coverage Results" MODIFIED="1570554047095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
     <SUITE FILE_PATH="coverage/Work_with_documents$Scan_processing.coverage" NAME="Scan_processing Coverage Results" MODIFIED="1570654098044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Alpha" />
   </component>

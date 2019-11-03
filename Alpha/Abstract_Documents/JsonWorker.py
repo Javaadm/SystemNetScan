@@ -153,14 +153,36 @@ class JsonWorker:
     def print_data(self):
         pass
 
-    def add_train_data_field(self, field_name, coords, lang, path_to_image, pattern):
+    def create_train_data_field(self, doc_number, fields, stamps, pages):
         field = dict()
-        field["coords"] = coords
-        field["land"] = lang
-        field["path_to_image"] = path_to_image
-        field["pattern"] = pattern
-        self.add_field(field_name, field)
+        if doc_number in self.working_directory:
+            raise(Exception, "trying to rewrite existing document with number:"
+                  + doc_number)
+        field["fields"] = fields
+        field["stamps"] = stamps
+        field["pages"] = pages
+        self.add_field(doc_number, field)
         self.apply_changes()
+
+    def create_work_data_fields(self,fields_name, fields):
+        self.add_field(fields_name, fields)
+        self.apply_changes()
+
+
+
+    # def add_work_data_field(self, field_name, coords, page_number, lang,
+    #                    is_hand_writing, is_having_digit, params, pattern):
+    #     field = dict()
+    #     field["coords"] = coords
+    #     field["page_number"] = page_number
+    #     field["lang"] = lang
+    #     field["is_hand_writing"] = is_hand_writing
+    #     field["is_having_digit"] = is_having_digit
+    #     field["params"] = params
+    #     self.add_field(field_name=field_name, value=field)
+    #     self.apply_changes()
+
+
 
     # Bellow are located only static methods
     @staticmethod

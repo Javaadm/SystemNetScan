@@ -115,10 +115,20 @@ class PassPage:
         diag2.make_shift(new_start)
         return ret_image, diag1, diag2
 
-    def get_edges(self):
+    def get_edges(self, arg1=7, arg2=14):
         edges = self.get_image().convert('L')
         edges = numpy.array(edges)
-        edges = cv.Canny(edges, 7, 14)
+        edges = cv.Canny(edges, arg1, 14)
+        return edges
+
+    def get_mini_edges(self, shrinking=4, arg1=16, arg2=14):
+        edges = self.get_image().convert('L')
+        print(edges.size)
+        edges.thumbnail([x/shrinking for x in edges.size], Image.ANTIALIAS)
+        print(edges.size)
+        edges = numpy.array(edges)
+        edges = cv.Canny(edges, arg1, 32)
+        print(edges.size)
         return edges
 
     # def cleaner(self):
@@ -126,7 +136,8 @@ class PassPage:
     #     os.system("rm new_C_directory/coordinates_4p.txt")
 
     def LETS_ROLL(self):
-        edges = self.get_edges()
+        shrinking = 8
+        edges = self.get_mini_edges(shrinking=shrinking)
         # fucking debug starts
         # with open("new_C_directory/image.txt", "w") as f:
         #     a = edges.tolist()
@@ -137,6 +148,8 @@ class PassPage:
         # fucking debug ends
         # start of cpp block
         coords = get_pass_corners(edges)
+        print(coords)
+        coords = [x*shrinking for x in coords]
         print(coords)
         # end of cpp block
         diag1 = Segment(Point(coords[1], coords[0]), Point(coords[3], coords[2]))

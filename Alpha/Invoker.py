@@ -18,8 +18,10 @@ import math
 import cv2 as cv
 
 
-# passport = UkrPass("images/pass.pdf", "images/", deletion_key=False, analysis_key=True, is_debugging=True)
-# print(passport.pass_info)
+passport = UkrPass("images/pass.pdf", "images/", deletion_key=False, analysis_key=True, is_debugging=True)
+print(passport.pass_info)
 # passport.create_file()
 
-
+# img = Image.open("./images/jopa.jpg")
+# img.thumbnail((128,128), Image.ANTIALIAS)
+# img.save("./images/jopa2.jpg", "JPEG")
