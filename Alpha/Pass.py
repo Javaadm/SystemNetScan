@@ -1,5 +1,5 @@
-from Alpha.PassPage import PassPage
-from Alpha.PointVector import Point
+from PassPage import PassPage
+from PointVector import Point
 from docx import Document
 from pdf2image import convert_from_path
 import pytesseract

@@ -4,9 +4,9 @@ import pytesseract
 import tesserocr
 from PIL import Image
 import json
-from Alpha.PassPage import PassPage
-from Alpha.PointVector import Point
-from Alpha.Pass import Pass
+from PassPage import PassPage
+from PointVector import Point
+from Pass import Pass
 
 
 class BlrPass(Pass):

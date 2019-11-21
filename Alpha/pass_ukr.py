@@ -1,8 +1,8 @@
 import pytesseract
-from Alpha.PassPage import PassPage
-from Alpha.PointVector import Point
-from Alpha.Pass import Pass
-
+from PassPage import PassPage
+from PointVector import Point
+from Pass import Pass
+import numpy as np
 
 
 class UkrPass(Pass):
@@ -15,6 +15,8 @@ class UkrPass(Pass):
         self.debugging_log("arrange_pages", self.is_debugging)
         new_list = (self.find_pages(["passport"]))
         self.pages = [new_list[key] for key in sorted(new_list.keys())]
+        # print(self.pages[0].get_image().size)
+        print(np.array(self.pages[0].get_image()).shape)
 
     def clear(self):
         pass
@@ -42,7 +44,7 @@ class UkrPass(Pass):
         second_page_text["first_name"] = self.first_name(second_page_image)
         second_page_text["surname"] = self.surname(second_page_image)
         second_page_text["patronymic"] = self.patronymic(second_page_image)
-        # second_page_text["birth_date"] = self.birth_date(second_page_image)
+        second_page_text["birth_date"] = self.birth_date(second_page_image)
         # second_page_text["birth_place"] = self.birth_place(second_page_image)
         # second_page_text["personal_number"] = self.personal_number(second_page_image)
         # second_page_text["issuing_date"] = self.issuing_date(second_page_image)
