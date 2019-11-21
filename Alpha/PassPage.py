@@ -1,6 +1,6 @@
-from Alpha.Segment import Segment
-from Alpha.PointVector import Point
-from Alpha.C_implementation import get_pass_corners
+from Segment import Segment
+from PointVector import Point
+from C_implementation import get_pass_corners
 from PIL import Image
 import pytesseract
 import numpy

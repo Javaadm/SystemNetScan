@@ -1,4 +1,4 @@
-from Alpha.PointVector import Point
+from PointVector import Point
 import math
 
 
