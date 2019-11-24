@@ -74,11 +74,13 @@ class JsonWorker:
             path_to_json = self.path_to_json
         # print(self.root_args)
         self.apply_changes()
-        new_data = self.get_working_root(self.root_args)
+        # new_data = self.get_working_root(self.root_args)
+        new_data = self.get_working_directory([])
         for i in range(1, len(self.root_args)+1):
             prev_data = new_data
             new_data = self.get_working_root(self.root_args[:-i])
             new_data[self.root_args[-i]] = prev_data
+            print(new_data)
         # whole = JsonWorker([], self.path_to_json)
         # whole.move_to(self.root_args[:-1])
         # print(self.root_args)
@@ -164,7 +166,7 @@ class JsonWorker:
         self.add_field(doc_number, field)
         self.apply_changes()
 
-    def create_work_data_fields(self,fields_name, fields):
+    def create_work_data_fields(self, fields_name, fields):
         self.add_field(fields_name, fields)
         self.apply_changes()
 

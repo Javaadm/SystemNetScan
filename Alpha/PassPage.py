@@ -152,6 +152,7 @@ class PassPage:
         coords = [x*shrinking for x in coords]
         print(coords)
         # end of cpp block
+        #
         diag1 = Segment(Point(coords[1], coords[0]), Point(coords[3], coords[2]))
         diag2 = Segment(Point(coords[5], coords[4]), Point(coords[7], coords[6]))
         center = Segment(diag1.get_center(), diag2.get_center()).get_center()

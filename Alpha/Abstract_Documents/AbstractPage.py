@@ -1,4 +1,4 @@
-from Abstract_Documents.AbstractPage import AbstractPage
+# from Abstract_Documents.AbstractPage import AbstractPage
 from Segment import Segment
 from PointVector import Point
 from C_implementation import get_pass_corners
@@ -33,14 +33,16 @@ class AbstractPage:
         return text
 
     def percentage_crop(self, image, upper_left, lower_right, params={}):
-        upper_left = Point(upper_left[0] * image.size[1], upper_left[1] * image.size[0])
-        lower_right = Point(lower_right[0] * image.size[1], lower_right[1] * image.size[0])
-        return AbstractPage.prepare_image_part(image, upper_left, lower_right, canvas_size=params["canvas_size"],
-                                               color=params["color"], brightness_border=params["brightness_border"])
+        upper_left = Point(upper_left.x * image.size[1], upper_left.y * image.size[0])
+        lower_right = Point(lower_right.x * image.size[1], lower_right.y * image.size[0])
+        return AbstractPage.prepare_image_part(image, upper_left, lower_right,
+                                               canvas_size=(params["canvas_size"] if "canvas size" in params else None),
+                                               color=(params["color"] if "color" in params else None),
+                                               brightness_border=(params["brightness_border"] if "brightness_border" in params else None))
 
     def get_text_form_field(self, field):
-        upper_left = Point(field["coords"][0], field["coords"][1])
-        lower_right = Point(field["coords"][2], field["coords"][3])
+        upper_left = Point(field["coords"][1], field["coords"][0])
+        lower_right = Point(field["coords"][3], field["coords"][2])
         image = self.percentage_crop(self.get_image(), upper_left, lower_right, field['params'])
         return pytesseract.image_to_string(image, lang=field['lang'])
 
@@ -68,6 +70,8 @@ class AbstractPage:
 
     @staticmethod
     def give_bw(image, brightness_border=180):
+        if brightness_border is None:
+            brightness_border = 180
         column = image
         gray = column.convert('L')
         bw_image = gray.point(lambda x: 0 if x < brightness_border else 255, '1')
@@ -175,6 +179,7 @@ class AbstractPage:
         coords = [x*shrinking for x in coords]
         print(coords)
         # end of cpp block
+        # There are x and y swap because array looks like [x, y] but Image looks like [y, x]
         diag1 = Segment(Point(coords[1], coords[0]), Point(coords[3], coords[2]))
         diag2 = Segment(Point(coords[5], coords[4]), Point(coords[7], coords[6]))
         center = Segment(diag1.get_center(), diag2.get_center()).get_center()
